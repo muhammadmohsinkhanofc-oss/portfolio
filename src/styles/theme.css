@@ -1,0 +1,51 @@
+:root {
+  --color-obsidian: #080808;
+  --color-graphite: #191919;
+  --color-silver: #BFC1C5;
+  --color-soft-white: #F4F4F1;
+  --color-muted: #777777;
+  --hairline: rgba(191, 193, 197, 0.14);
+  --hairline-strong: rgba(244, 244, 241, 0.28);
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-obsidian);
+  color: var(--color-soft-white);
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-soft-white);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.hairline-border {
+  border-color: var(--hairline);
+}
+
+.chrome-text {
+  background: linear-gradient(180deg, #F4F4F1 0%, #BFC1C5 55%, #777777 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

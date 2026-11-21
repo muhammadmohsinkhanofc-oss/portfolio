@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+@keyframes subtle-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-exhibition-marquee {
+  display: flex;
+  width: max-content;
+  animation: subtle-marquee 42s linear infinite;
+}
+
+.animate-exhibition-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-exhibition-marquee {
+    animation: none;
+  }
+}
